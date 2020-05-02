@@ -1,0 +1,550 @@
+@import 'variables'
+html
+    font-size: 24px
+body
+    background-color: $main_color
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+ul, li, figure, h1, h2, p, button
+    margin: 0
+    padding: 0
+
+.main_block
+    width: 100%
+
+//--------------------Header_and_NAV_panel---------------------------
+header
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 0.2rem 0
+    width: 100%
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1)
+
+
+.bold
+    font-weight: bold
+
+.header_block_left
+    margin-left: 6%
+
+.header_block_right
+    margin-right: 6%
+    position: relative
+
+
+
+.header_block_middle
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-right: 1rem
+
+.burger_menu
+    list-style: none
+
+.ingredients_part, .about_us_part, .my_account_part
+    width: 0.85rem
+    height: 0.09rem
+    border-radius: 0.05rem
+    background-color: #7A5555
+
+.company_sign
+    margin: 0 0.8rem
+
+.about_us_part
+    margin: 0.18rem 0
+
+.leaf_picture
+    width: 1rem
+
+.company_tittle
+    font-size: 0.65rem
+    font-family: $maven
+
+.cart_picture
+    width: 1rem
+
+.order_quantity
+    position: absolute
+    right: -0.2rem
+    top: -0.2rem
+    text-align: center
+    color: white
+    border-radius: 100%
+    background-color: #6caae4
+    font-size: 0.416rem
+    font-family: $maven
+    font-weight: bold
+    line-height: 0.416rem
+    padding: 0.13rem 0.11rem
+
+//--------------------Upper_Section---------------------------/
+
+.first_block_header
+    margin-left: 6.56%
+    font-family: $maven
+    font-size: 1rem
+    font-weight: 600
+    text-transform: uppercase
+    margin-top: 1rem
+
+.first_block_advantage
+    margin-top: 0.8rem
+    margin-left: 6.56%
+    font-size: 0.47rem
+    font-family: $maven
+    font-weight: 500
+
+.advantage_description_image
+    background: center/cover no-repeat url("./images/reduced_size/check-icon.png")
+    width: 0.75rem
+    height: 0.583rem
+
+.first_block_advantage_description
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    margin-top: 0.7rem
+    margin-left: 6.56%
+
+.advantage_description_text
+    font-family: $maven
+    font-size: 0.42rem
+    font-weight: 600
+    margin-left: 0.625rem
+
+.first_block_image
+    display: flex
+    margin-left: 19%
+
+.first_block_tube_image
+    width: 9.25rem
+    margin: 1.1rem auto 0 auto
+
+.first_block_button
+    width: 100%
+    margin-top: 1.291rem
+    margin-bottom: 1rem
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+
+.price_button
+    background-color: rgb(108, 170, 228)
+    width: 11.25rem
+    height: 1.979rem
+    border-radius: 5px
+    color: #fff
+    margin: 0 auto
+    text-transform: uppercase
+    font-family: $maven
+    font-weight: 600
+
+.price_button_signature
+    font-family: $maven
+    font-size: 0.364rem
+    font-weight: 500
+    margin-top: 0.416rem
+
+//--------------------------------Upper-Section--------------------/
+
+.shipping_container
+    display: flex
+    box-shadow: 0 0 15px  rgba(52, 52, 52, 0.15)
+    //margin: 1rem 0 1rem 6.26%
+
+.shipping_image
+    width: 1.625rem
+    height: 1.75rem
+
+.shipping_container_left
+    margin: 1rem 0 1rem 6.26%
+
+.shipping_container_right
+    display: flex
+    flex-direction: column
+    margin-left: 6.25%
+    justify-content: center
+
+.shipping_image_header
+    font-family: $maven
+    font-weight: 700
+    font-size: 0.6rem
+    color: rgb(62, 62, 62)
+    margin-bottom: 0.3rem
+
+.shipping_image_text
+    font-family: $lato
+    font-size: 0.5rem
+    color: rgb(118, 118, 118)
+    padding-bottom: 0.2rem
+
+.video_container
+    position: relative
+
+.video_picture
+    width: 100%
+    height: 8.916rem
+    background-color: #9e9e9e
+
+.video_play_sign
+    position: absolute
+    right: 5%
+    bottom: 4%
+
+.video_play_sign_image
+    width: 2.6458rem
+
+//------------------------Watch_video_section---------------------/
+.watch_video_section
+    background-color: #fff
+
+.watch_video_header
+    font-family: $maven
+    font-weight: 400
+    font-size: 0.875rem
+    margin-left: 6.56%
+    text-transform: uppercase
+    padding-top: 1.25rem
+    background-color: #fff
+
+.watch_video_text
+    margin-top: 1.25rem
+    margin-left: 6.56%
+
+.watch_video_sentence
+    font-family: $lato
+    font-size: 0.45rem
+    color: rgb(119, 119, 119)
+
+.watch_video_sentence:last-child
+    margin-top: 0.1rem
+
+.watch_video_button_container
+    display: flex
+    padding: 1.166rem 0 1.5rem 0
+
+.watch_video_button
+    margin: 0 auto
+    width: 11.75rem
+    height: 2.1458rem
+    border-radius: 5px
+    background-color: rgb(108, 170, 228)
+    font-family: $maven
+    font-weight: 700
+    text-transform: uppercase
+    color: #fff
+    letter-spacing: 0.084rem
+
+//-----------------------------Cream_description--------------------------/
+
+.cream_description_block
+    background-color: #f5f5f5
+
+.cream_description_header
+    font-family: $maven
+    font-weight: 400
+    font-size: 0.8rem
+    margin-top: 1.25rem
+    margin-left: 6.56%
+    color: #333740
+    text-transform: uppercase
+
+.cream_description_paragraph
+    margin-top: 1.125rem
+    margin-left: 6.56%
+    font-family: $lato
+    font-size: 0.5rem
+    color: #83888f
+
+.cream_description_image_container
+    margin-top: 1rem
+    display: flex
+    align-items: center
+
+.cream_description_image
+    margin-left: 2.5%
+
+.cream_description_picture
+    width: 5.4791rem
+    height: auto
+
+//.cream_description_advantage
+//    display: flex
+
+.cream_description_advantage_header
+    font-family: $maven
+    font-size: 0.375rem
+    text-transform: uppercase
+    font-weight: 600
+    margin-left: 0.5rem
+
+.cream_description_advantage_text
+    font-family: $lato
+    font-size: 0.38rem
+    line-height: 0.6rem
+    color: #7a7d81
+    word-spacing: 0.1rem
+    margin-right: 1rem
+
+.cream_description_advantage:nth-child(even)
+    margin: 1rem 0
+
+.cream_description_advantage_border
+    height: 0.83rem
+    width: 0.135rem
+    border-radius: 0.1rem
+    background-color: rgb(108, 170, 228)
+
+.cream_description_header_container
+    display: flex
+    align-items: center
+    padding-bottom: 0.45rem
+
+//---------------------------------Order_section------------------------/
+.order_section_container
+    display: flex
+    padding: 0.73rem 6.56% 0.73rem 6.56%
+    align-items: center
+    justify-content: center
+    background-color: #fff
+    border-bottom: 1px solid rgb(230, 230, 230)
+
+
+.order_section_sign
+    height: 1.666rem
+    width: 1.666rem
+    background-color: #6caae4
+    border-radius: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+
+
+.location_sign_icon
+    width: 0.833rem
+
+.order_section_title
+    font-family: $maven
+    font-weight: 400
+    font-size: 0.5rem
+    text-transform: uppercase
+    margin-left: 0.95rem
+
+label
+    font-family: $maven
+    font-size: 0.45rem
+    font-weight: 500
+    padding: 0.66rem 0 0.291rem 0
+    color: black
+
+.form_element_group
+    display: flex
+    flex-direction: column
+
+
+.double_form_group
+    display: flex
+    justify-content: space-between
+
+.double_form_group
+    .form_element_group
+        width: 42.5%
+
+.order_info
+    background-color: #fff
+
+
+.form_container
+    margin-left: 6.56%
+    margin-right: 6%
+
+
+.form_element
+    display: block
+    border: 1px solid #e7e7e7
+    outline: none
+    height: 1.4583rem
+    font-family: $lato
+    font-size: 0.5rem
+    padding-left: 0.5rem
+
+.payment_button_container
+    height: 2.2rem
+    padding: 1.2rem 6% 1.2rem 6.56%
+
+.payment_button
+    width: 100%
+    height: 100%
+    background-color: rgb(108, 170, 228)
+    color: #fff
+    font-family: $maven
+    font-weight: 600
+    font-size: 0.6rem
+    text-transform: uppercase
+    border-radius: 0.2rem
+    outline: none
+
+//-------------------------------------Mailing-section----------------------/
+
+.mailing_section
+    padding: 0 6% 0 6.56%
+
+.mailing_container
+    margin: 1rem 0 0.5rem 0
+    display: flex
+    position: relative
+
+.mailing_header
+    font-family: $maven
+    font-size: 0.63rem
+    font-weight: 500
+    text-transform: uppercase
+    padding-top: 2rem
+    color: #26292c
+
+.mailing_input
+    border: 1px solid #e7e7e7
+    outline: none
+    height: 1.9rem
+    font-family: $maven
+    font-weight: 600
+    font-size: 0.5rem
+    background-color: #F7F2F2
+    width: 100%
+    padding-left: 0.5rem
+
+
+.mailing_button
+    width: 4.208rem
+    height: 1.5rem
+    background-color: rgb(108, 170, 228)
+    color: white
+    border-radius: 5px
+    position: absolute
+    right: 0.25rem
+    top: 0.25rem
+    text-transform: uppercase
+    font-family: $maven
+    font-size: 0.45rem
+    font-weight: 600
+    outline: none
+    border: none
+
+.mailing_input_subheader
+    font-family: $maven
+    font-size: 0.6rem
+    font-weight: 400
+    color: #8c8f94
+    padding: 1.15rem 0 2.2rem 0
+    text-align: center
+
+//-----------------------------Lower-section----------------/
+
+.lower_section
+    background-color: #ffffff
+
+.lower_section_container
+    padding: 1rem 6% 1.25rem 6.56%
+
+.lower_section_logo
+    display: flex
+    align-items: center
+
+.lower_section_picture
+    width: 1.5rem
+
+.lower_section_header
+    font-size: 0.66rem
+    font-family: $maven
+    font-weight: 600
+    margin-left: 1rem
+
+.logo_section_text
+    font-family: $lato
+    color: #8c8f94
+    font-size: 0.6rem
+    margin-top: 1.8rem
+
+.social_media
+    display: flex
+    flex-direction: row
+    width: 100%
+    margin-top: 2rem
+
+.social_media_icon
+    height: 0.8rem
+
+.social_media_button
+    //width: 0.8rem
+    display: flex
+    align-items: center
+    justify-content: center
+    outline: none
+    border: none
+    background-color: #fff
+
+.social_media_button:not(:first-child)
+    margin-left: 0.5rem
+
+//------------------------------Footer-section---------------------/
+
+.footer_section
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+
+.footer_reference_block
+    display: flex
+    width: 45%
+    justify-content: space-between
+    flex-direction: column
+
+
+
+.reference_block_header
+    font-family: $maven
+    font-size: 0.5rem
+    font-weight: 600
+    color: black
+    padding-top: 1.33rem
+
+.footer_reference_design
+    font-family: $lato
+    font-size: 0.55rem
+    color: #8c8f94
+    padding-top: 1.1rem
+    text-decoration: none
+
+.footer_copyright_container
+    display: flex
+    width: 100%
+    padding: 1.66rem 6% 1.66rem 6.56%
+    border-top: 1px solid blue
+    background-color: #fff
+
+
+.copyright
+    font-family: $lato
+    font-size: .5rem
+    font-weight: 600
+    color: #8c8f94
+
+.copyright_reference
+    text-decoration: none
+    color: #6caae4
+
+
+
+
+
+
+
+
+
+
+
