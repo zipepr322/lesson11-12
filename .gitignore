@@ -1,3 +1,7 @@
-* .xml
-* .iml
-/source-size
+*.xml
+*.iml
+*.map
+/images/source_size
+/.idea
+/styles.css
+/variables.css
