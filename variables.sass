@@ -1,3 +1,23 @@
 $main_color: #F7F2F2
+
 $maven: 'Maven Pro', sans-serif
+
 $lato: 'Lato', sans-serif
+
+@mixin button-style
+  font-family: $maven
+  color: #fff
+  background-color: rgb(108, 170, 228)
+  border-radius: 0.2083rem
+  text-transform: uppercase
+
+%divider
+  border-top: 1px solid #e7e7e7
+
+%column-flex-position
+  display: flex
+  flex-direction: column
+
+%justify-align-center
+  justify-content: center
+  align-items: center
